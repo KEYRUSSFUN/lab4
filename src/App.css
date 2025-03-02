@@ -1,0 +1,136 @@
+/* Общие стили */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.7;
+  transition: background-color 0.3s, color 0.3s; /* Плавный переход для смены темы */
+}
+
+body.dark {
+  background-color: #222;
+  color: #eee;
+}
+
+
+/* Header */
+header {
+  background-color: #fff;
+  color: #2c3e50;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  color: #777;
+}
+
+/* Menu */
+nav {
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+  width: 250px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #444;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none; /* Убираем подчеркивание */
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #f0f0f0; /* Светлый фон при наведении */
+  color: #222;
+}
+
+/* Content */
+.content {
+  padding: 30px;
+  background-color: #fff;
+  border-left: 1px solid #e0e0e0;
+  flex: 1;
+}
+
+.content h2 {
+  font-size: 1.7em;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+.content p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Общий контейнер */
+.app-container {
+  min-height: 100vh;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  min-width: 1920px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.app-container.dark {
+  background-color: #333;
+  color: #eee;
+}
+
+.app-container.dark header {
+  background-color: #222;
+  color: #fff;
+  border-bottom: 1px solid #555;
+}
+
+.app-container.dark footer {
+  background-color: #222;
+  color: #999;
+  border-top: 1px solid #555;
+}
+
+.counter-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.counter-section button {
+  padding: 5px 10px;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+}
